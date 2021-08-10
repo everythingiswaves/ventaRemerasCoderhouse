@@ -1,0 +1,103 @@
+#productos {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: 20rem 20rem 20rem;
+  background-color: #bebebe;
+  padding: 10px;
+}
+
+.productos-item,
+.producto-carrito {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+#div-tabla-carrito {
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #bebebe; 
+  padding: 0 10px 0 10px;
+}
+#tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+td{
+  text-align: left;
+}
+
+.header {
+  background-color: aquamarine;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
+}
+
+#form {
+  margin: 2rem;
+}
+
+.divPagar {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+/* MODAL WINDOW */
+/* The Modal (background) */
+.modal, .modalCarrito {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content, .modal-content-carrito {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  height: 10%;
+}
+
+/* The Close Button */
+.closeModal, .closeModalCarrito {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeModal:hover,
+.closeModal:focus,
+.closeModalCarrito:hover,
+.closeModalCarrito:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* /////////////////////////////////// */
+
+.confirmar {
+  display: none; /* Hidden by default */
+}
+
+#nightMode {
+  float: right;
+}
